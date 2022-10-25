@@ -11,14 +11,9 @@ body {
 
 main {
     width: 100%;
-    height: 100vh
-}
-
-.filme-frame {
-    width: 100%;
     height: 100vh;
-    -webkit-filter: brightness(40%);
-    filter: brightness(50%);
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -30,6 +25,13 @@ h1 {
     font-family: 'PT Sans', sans-serif;
     animation: showup 2s 1;
     animation-fill-mode: forwards;
+}
+
+.filme-frame {
+    width: 100%;
+    height: 100vh;
+    -webkit-filter: brightness(40%);
+    filter: brightness(50%);
 }
 
 .sinopse {
@@ -146,7 +148,10 @@ h1 {
 #trailer {
     width: 100%;
     height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-size: 300% 300%;
@@ -158,6 +163,24 @@ h1 {
             rgba(255,53,127,1) 100%
     );  
     animation: AnimateBG 20s ease infinite;
+}
+
+.ContainerHeader {
+    width: 5vh;
+    height: 5vh;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.header-img {
+    width: 5vh;
+    height: 5vh;
+    background-color: white;
+    border-radius: 50%;
 }
 
 @keyframes AnimateBG { 
