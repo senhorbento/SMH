@@ -49,6 +49,8 @@ h1 {
     padding: 14% 13%;
     position: absolute;
     z-index: 1;
+    animation: showup 4s 1;
+    animation-fill-mode: forwards;
 }
 
 .diretor {
