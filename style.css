@@ -25,6 +25,7 @@ h1 {
     max-height: 100%;
     -webkit-filter: brightness(40%);
     filter: brightness(50%);
+    filter: blur(10%);
 }
 
 .header-img {
