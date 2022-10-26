@@ -53,14 +53,6 @@ aside {
     animation-fill-mode: forwards;
 }
 
-.sinopse {
-    max-width: 100vh;
-    top: 45%;
-    font-family: 'Poppins', sans-serif;
-    animation: showup 5s forwards;
-    backdrop-filter: blur(20px);
-}
-
 .sinopse-texto {
     color: white;
     font-size: 2vh;
@@ -99,10 +91,6 @@ aside {
     margin-left: 200px;
 }
 
-.container-notas {
-    animation: showup 5s forwards;
-}
-
 .nota-rotten {
     margin-right: 50px;
     width: 120px;
@@ -112,7 +100,6 @@ aside {
     margin-top: 6px;
     margin-bottom: 50px;
 }
-
 
 .btn-trailer {
     background-color: #B500FF;
