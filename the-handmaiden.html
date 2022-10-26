@@ -10,60 +10,62 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-containers.css">
 </head>
 
-<body>
-    <header class="ContainerHeader">
-        <a href="index.html">
-            <img src="img/home.png" alt="home" class="header-img" title="home">
-        </a>
-    </header>
-
-    <h1 class="nome-cinema">CINEMA</h1>
-
-    <main id="sinopse">
-
-        <section class="filme">
-            <div class="card"></div>
-
-            <section class="filme">
-
-                <div class="card"></div>
-            <h1 class="titulo-filme">The Handmaiden</h1>
-            <div class="detalhes-filme">
-                <p class="diretor">Dirigido por: Park Chan-wook
-                    <br>
-                    Gênero: Mistério & Thriller, Drama, Romance
-                </p>
-                <div class="nota-rotten">
-                    <img src="img/rotten-handmaiden.png" alt="Nota Rotten">
+<body>    
+    <main>
+        <img class="filme-frame" src="img/the-handmaiden-frame.jpg" alt="Wallpaper">
+        <div class="container">
+            <header class="container-header">
+                <div>
+                    <a href="index.html">
+                        <img src="img/home.png" alt="home" class="header-img" title="home">
+                    </a>
                 </div>
+                <div>
+                    <h2 class="nome-cinema">CINEMA</h2>
                 </div>
+                <div></div>
+            </header>  
+            <section class="conteiner-descricao">
+                <h1>The Handmaiden</h1>
+                <div class="conteiner-sinopse">
+                    <section class="sinopse">
+                        <p class="sinopse-texto">Coreia do Sul, anos 1930. Durante a ocupação japonesa, a jovem Sook-hee é 
+                            contratada para trabalhar para uma herdeira nipônica, Hideko, que leva uma vida isolada ao lado do tio autoritário. 
+                            Só que Sook-hee guarda um segredo: ela e um vigarista planejam desposar a herdeira, roubar sua fortuna e trancafiá-la em 
+                            um sanatório. Tudo corre bem com o plano, até que Sook-hee aos poucos começa a compreender as motivações de Hideko.</p>
+                        <p class="diretor">
+                            Dirigido por: Park Chan-wook<br>
+                            Gênero: Drama, Romance & Thriller
+                        </p>
+                        <div class="container-notas">
+                            <a class="nota-rotten" href="https://www.rottentomatoes.com/m/the_handmaiden">
+                                <img src="img/rotten-handmaiden.png" alt="Nota Rotten"/>
+                            </a>
+                            <span class="imdbRatingPlugin" data-user="ur158134307" data-title="tt4016934" data-style="p1">
+                                <a href="https://www.imdb.com/title/tt4016934/?ref_=plg_rt_1">
+                                    <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt=" A Criada (2016) on IMDb" />
+                                </a>
+                            </span>
+                            <script>
+                                (function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");
+                            </script>
+                        </div> 
+                    </section>
+                    <aside class="card">
+                        <img class="filme-poster" src="img/the-handmaiden-poster.jpg" alt="Poster">
+                    </aside>
+                </div> 
+                <nav class="container-btn">
+                    <a href="#trailer"><button class="btn-trailer">Assistir trailer</button></a> 
+                    <a href="#trailer"><button class="btn-comprar-ingresso">Comprar Ingresso</button></a>
+                </nav> 
             </section>
-
-        </section>
-
-        <section class="sinopse">
-                <p class="sinopse-texto">Coreia do Sul, anos 1930. Durante a ocupação japonesa, a jovem Sook-hee é 
-                contratada para trabalhar para uma herdeira nipônica, Hideko, que leva uma vida isolada ao lado do tio autoritário. 
-                Só que Sook-hee guarda um segredo: ela e um vigarista planejam desposar a herdeira, roubar sua fortuna e trancafiá-la em 
-                um sanatório. Tudo corre bem com o plano, até que Sook-hee aos poucos começa a compreender as motivações de Hideko.</p>
-        </section>
-
-        <nav>
-            <a href="#trailer"><button class="btn-trailer">Assistir trailer</button></a>
-            <a href="#trailer"><button class="btn-comprar-ingresso">Comprar Ingresso</button></a>
-        </nav>
-
-        <aside>
-            <img class="filme-poster" src="img/the-handmaiden-poster.jpg" alt="">
-            <img class="filme-frame" src="img/the-handmaiden-frame.jpg" alt="">
-        </aside>
-
+        </div>
         <section id="trailer">
-            <div>
-                <iframe width="800" height="450" src="https://www.youtube.com/embed/whldChqCsYk" frameborder="0"></iframe>
-            </div>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/whldChqCsYk" frameborder="0"></iframe>
         </section>
     </main>
 </body>
