@@ -9,95 +9,80 @@ body {
     ); 
 }
 
-main {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
 h1 {
-    z-index: 1;
-    position: absolute;
     color: white;
     font-size: 5rem;
-    padding: 5% 12%;
     font-family: 'PT Sans', sans-serif;
     animation: showup 2s 1;
     animation-fill-mode: forwards;
 }
 
-.nome-cinema {
-    z-index: 1;
-    color: white;
-    position: absolute;
-    font-size: 2rem;
-    font-family: 'Poppins', sans-serif;
-    left: 50%;
-    top: 2%;
-    transform: translate(-50%, -50%);
-}
-
 .filme-frame {
-    width: 100%;
-    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
     -webkit-filter: brightness(40%);
     filter: brightness(50%);
 }
 
+.header-img {
+    width: 5vh;
+    height: 5vh;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.nome-cinema {
+    margin-top: 0px;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
 .detalhes-filme {
     padding: 14% 13%;
-    position: absolute;
-    z-index: 1;
     animation: showup 4s 1;
     animation-fill-mode: forwards;
+}
+
+.sinopse {
+    max-width: 100vh;
+    top: 45%;
+    word-break: break-all;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sinopse-texto {
+    color: white;
+    font-size: 2vh;
+    word-break: keep-all;
+    text-align: justify;
+    backdrop-filter: blur(60px);
+    animation: showup 5s;
+    animation-fill-mode: forwards;
+    padding: 0 5% 1%;
 }
 
 .diretor {
     font-family: 'Poppins', sans-serif;
     font-size: 2vh;
     color: white;
-}
-
-.sinopse {
-    max-width: 100vh;
-    margin-left: 11%;
-    z-index: 1;
-    position: absolute;
-    color: white;
-    backdrop-filter: blur(60px);
-    top: 45%;
-    word-break: break-all;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2vh;
-    animation: showup 5s;
-    animation-fill-mode: forwards;
-}
-
-.sinopse-texto {
-    padding: 0 5% 1%;
-    word-break: keep-all;
-    text-align: justify;
+    padding: 0 5%;
 }
 
 .filme-poster {
-    position: absolute;
-    z-index: 1;
-    right: 13%;
-    top: 26%;
     width: 250px;
     height: 400px;
     border-radius: 20px;
-    padding: 5px;
     animation: showup 4s forwards;
     animation-iteration-count: 1;
 }
 
 .card {
-    z-index: 1;
-    position: absolute;
-    right: 13%;
-    top: 26%;
+    margin-left: 15%;
+    z-index: -1;
     width: 250px;
     height: 400px;
     border-radius: 20px;
@@ -108,33 +93,27 @@ h1 {
     animation-iteration-count: 1;
 }
 
+.nota-rotten {
+    margin-right: 5%;
+}
+
 .btn-trailer {
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 13%;
     background-color: #B500FF;
     color: #fff;
     padding: 13px 20px;
     border: 2px solid #B500FF;
     font-size: 17px;
-    transition: 0.3s;
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
 .btn-comprar-ingresso {
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 25%;
     background-color: rgba(255,53,127,1);
     color: #fff;
     padding: 13px 20px;
     border: 2px solid rgba(255,53,127,1);
     font-size: 17px;
-    transition: 0.3s;
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -180,24 +159,6 @@ h1 {
             rgba(255,53,127,1) 100%
     );  
     animation: AnimateBG 20s ease infinite;
-}
-
-.ContainerHeader {
-    width: 5vh;
-    height: 5vh;
-    z-index: 2;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
-
-.header-img {
-    width: 5vh;
-    height: 5vh;
-    background-color: white;
-    border-radius: 50%;
 }
 
 @keyframes AnimateBG { 
