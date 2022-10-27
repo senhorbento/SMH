@@ -23,15 +23,21 @@ main {
     margin-left: 11%;
 }
 
-.conteiner-sinopse {
+.container-sinopse {
     display: flex;
     align-items: flex-start;
+    max-width: 100vh;
+    top: 45%;
+    font-family: 'Poppins', sans-serif;
+    animation: showup 5s forwards;
+    backdrop-filter: blur(20px);
 }
 
 .container-notas {
-    padding: 0 5%;
     display: flex;
     align-items: flex-start;
+    padding: 0 5%;
+    animation: showup 5s forwards;
 }
 
 .container-btn {
