@@ -46,3 +46,39 @@ main {
     align-items: flex-start;
 }
 
+.container-cartaz {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-info-cinema {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #fff;
+    font-size: 20px;
+    max-width: 100vh;
+    margin-top: 130px;
+    margin-left: 200px;
+    font-family: 'Poppins', sans-serif;
+    animation: showup 5s forwards;
+}
+
+.container-info-cinema .significado {
+    font-size: 15px;
+}
+
+.container-info-cinema h1 {
+    margin-bottom: 2px;
+    font-size: 100px;
+}
+
+.em-breve-container {
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    margin-top: 80px;
+}
