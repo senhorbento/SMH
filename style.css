@@ -15,6 +15,62 @@ aside {
     height: 0;
 }
 
+/** Home **/
+
+#home {
+    min-height: 90vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cinema-logo {
+    height: 850px;
+    width: 800px;
+}
+
+.btn-cartaz {
+    background-color: #B500FF;
+    color: #fff;
+    padding: 13px 20px;
+    border: 2px solid #B500FF;
+    font-size: 17px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 80px;
+}
+
+.poster-cartaz {
+    width: 250px;
+    height: 400px;
+}
+
+#cartaz {
+    min-width: 100%;
+    min-height: 100vh;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+            -45deg, 
+            rgba(59,173,227,1) 0%, 
+            rgba(87,111,230,1) 25%, 
+            rgba(152,68,183,1) 51%, 
+            rgba(255,53,127,1) 100%
+    );  
+    animation: AnimateBG 20s ease infinite;
+    text-align: center;
+}
+
+#cartaz h2 {
+    margin-top: 100px;
+}
+
 .filme-frame {
     position: absolute;
     z-index: -1;
