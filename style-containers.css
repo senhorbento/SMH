@@ -74,3 +74,11 @@ main {
     font-size: 100px;
 }
 
+.em-breve-container {
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    margin-top: 80px;
+}

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Avaliação SMH</title>
+        <title>Avaliação SMH - KINEMA</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
@@ -24,30 +24,73 @@
                     <h1>Bem-vindo ao Kinema!</h2>
                     <p class="significado">Do Francês "Kino": cinema</p>
                     <p>O preferido do Rotten Tomatoes! Filmes com acima de 50% de avaliação 🍅</p>
-                    <a href="#cartaz"><button class="btn-cartaz">Em Cartaz</button></a>
+                    <nav class="container-btn">
+                        <a href="#cartaz"><button class="btn-cartaz">Em cartaz</button></a> 
+                        <a href="#em-breve"><button class="btn-em-breve">Em breve</button></a>
+                    </nav> 
                 </div>
-                    <img class="cinema-logo" src="img/cinema-logo.png" alt="Logo Cinema">
+                <img class="cinema-logo" src="img/cinema-logo.png" alt="Logo Cinema">
             </section>
             <section id="cartaz">
                 <h2 class="subtitulo">EM CARTAZ</h2>
                 <div class="container-cartaz">
                     <div class="item"><a href="blade-runner-2049.html"><img class="poster-cartaz" src="img/blade-runner-2049-poster.webp" alt="blade-runner-2049-posterS"></a>
-                        <p>Blade Runner 2049</p>
+                        <p class="titulo-poster">Blade Runner 2049</p>
                     </div>
                     <div class="item"><a href="perfect-blue.html"><img class="poster-cartaz" src="img/perfect-blue-poster.jpg" alt="perfect-blue-poster"></a>
-                        <p>Perfect Blue</p>
+                        <p class="titulo-poster">Perfect Blue</p>
                     </div>
                     <div class="item"><a href="the-purge.html"><img class="poster-cartaz" src="img/The-purge-poster.jpg" alt="The-purge-poster"></a>
-                        <p>The Purge: Election Year</p>
+                        <p class="titulo-poster">The Purge: Election Year</p>
                     </div>
                     <div class="item"><a href="dracula-1931.html"><img class="poster-cartaz" src="img/dracula-poster.jpg" alt="dracula-poster"></a>
-                        <p>Drácula (1931)</p>
+                        <p class="titulo-poster">Drácula (1931)</p>
                     </div>
-                    <div class="item">teste</div>
+                    <div class="item"><a href="duna.html"><img class="poster-cartaz" src="img/duna-poster.jpg" alt="duna-poster"></a>
+                        <p class="titulo-poster">Duna (2021)</p>
+                    </div>
                 </div>
             </section>
+            <section id="em-breve">
+                <img class="em-breve-frame" src="img/mario-frame.jpg" alt="Wallpaper">
+                <h2 class="subtitulo">EM BREVE</h2>
+                <div class="em-breve-container">
+                    <iframe width="800" height="450" src="https://www.youtube.com/embed/DUnQcJz76Ck" frameborder="0"></iframe>
+                    <div>
+                        <h3 class="subtitulo">Super Mario Bros: O Filme</h3>
+                        <p><b>Dirigido por:</b> Michael Jelenic, Aaron Horvath</p>
+                        <p><b>Gênero:</b> Ação, Aventura, Comédia</p>
+                        <table class="tabela-sessoes">
+                            <thead>
+                                <tr>
+                                    <th><h3>DATA</h3></th>
+                                    <th><h3>DETALHES</h3></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>30/03/2023</td>
+                                    <td>Dublado</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div>
+                    <h1>Kinema</h1>
+                </div>
+                <div class="nome-grupo">
+                    <p>Giovanna Marques</p> 
+                    <p>Henrique Bento</p> 
+                    <p>Juliana Vieira</p>
+                    <p>Matheus de Carvalho</p>  
+                </div>
+                <div>
+                    <img class="faeterj-logo" src="img/faeterj.png" alt="faeterj-logo">
+                </div>
+            </footer>
         </main>
-        <footer>
-        </footer>
     </body>
 </html>
