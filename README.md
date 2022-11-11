@@ -1,6 +1,8 @@
 # SMH
--> Site com pelo menos 5 páginas 
+-> Site com pelo menos 5 páginas  
 -> Texto, imagem e video
+
+[Acesso à página](https://senhorbento.github.io/SMH/index.html)
 
 ### Autores:
 |Nome| Github | LinkedIn|
